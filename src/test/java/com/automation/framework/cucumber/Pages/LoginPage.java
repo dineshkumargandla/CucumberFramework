@@ -12,17 +12,17 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//input[@id='user-name']")
+    @FindBy(xpath = "//input[@id='username']")
     private WebElement UserName;
 
     @FindBy(xpath = "//input[@id='password']")
     private WebElement Password;
 
-    @FindBy(xpath = "//input[@id='login-button']")
+    @FindBy(xpath = "//button[@name='login']")
     private WebElement LoginButton;
 
-    @FindBy(xpath = "//span[@class='title']")
-    private WebElement Title;
+    @FindBy(xpath = "//strong[1]")
+    private WebElement UserNameTittle;
 
     public void enterUserName() {
         UserName.clear();
@@ -38,7 +38,8 @@ public class LoginPage {
         LoginButton.click();
     }
 
-    public String getTittle() {
-        return Title.getText();
+    public boolean getUserName() {
+        boolean isUserNamePresent = UserNameTittle.isDisplayed();
+        return  isUserNamePresent;
     }
 }

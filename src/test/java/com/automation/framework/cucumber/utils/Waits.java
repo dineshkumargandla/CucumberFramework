@@ -1,5 +1,6 @@
 package com.automation.framework.cucumber.utils;
 
+import com.automation.framework.cucumber.setup.InitializeDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,8 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
-public class Waits {
-    private static WebDriver driver;
+public class Waits extends InitializeDriver {
 
     public Waits(WebDriver driver) {
         this.driver = driver;
