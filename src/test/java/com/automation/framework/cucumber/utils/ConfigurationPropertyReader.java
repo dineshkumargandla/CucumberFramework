@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Properties;
 
 
-public class Configuration {
+public class ConfigurationPropertyReader {
 
     private static final String filepath = "src/test/resources/config.properties";
     private static HashMap<String, String> propertyMap;
@@ -76,6 +76,15 @@ public class Configuration {
         }
     }
 
+    public static String getFeatureFileLocation() {
+        if (null == propertyMap.get("featurefile.location")) {
+            Log.error("Input Data directory is not set in config.properties. ");
+            return "data";
+        } else {
+            return getPropValue("featurefile.location");
+        }
+    }
+
     public static void init() {
         File infile = new File(filepath);
         Properties prop = new Properties();
@@ -89,9 +98,9 @@ public class Configuration {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        Configuration con = new Configuration();
+        ConfigurationPropertyReader con = new ConfigurationPropertyReader();
         init();
-        for (Map.Entry<String, String> entry : Configuration.propertyMap.entrySet()) {
+        for (Map.Entry<String, String> entry : ConfigurationPropertyReader.propertyMap.entrySet()) {
             System.out.printf("Key : %s -- Value: %s %n", entry.getKey(), entry.getValue());
         }
     }
