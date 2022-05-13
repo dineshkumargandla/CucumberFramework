@@ -117,3 +117,4 @@ target/test-classes/credentials.properties
 .idea/libraries/Maven__org_webjars_jquery_3_5_1.xml
 .idea/misc.xml
 .idea/modules.xml
+src/test/resources/credentials.properties

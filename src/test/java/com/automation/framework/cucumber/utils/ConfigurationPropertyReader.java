@@ -23,7 +23,7 @@ public class ConfigurationPropertyReader {
         String value = propertyMap.get(name);
         if (null == value || value.equals("")) {
             Log.error(name + " is not defined in config.properties file.");
-            return "";
+            throw new IllegalStateException(name + " is not defined in config.properties file.");
         } else
             return value.trim();
     }
@@ -43,7 +43,7 @@ public class ConfigurationPropertyReader {
     public static String getDataDir() {
         if (null == propertyMap.get("datafile.dir")) {
             Log.error("Input Data directory is not set in config.properties. ");
-            return "data";
+            throw new IllegalStateException("Input Data directory is not set in config.properties.");
         } else {
             return getPropValue("datafile.dir");
         }
@@ -51,8 +51,8 @@ public class ConfigurationPropertyReader {
 
     public static String getBrowserName() {
         if (null == getPropValue("test.browser")) {
-            Log.error("Input Data directory is not set in config.properties. ");
-            return "data";
+            Log.error("Browser name is not set in config.properties.");
+            throw new IllegalStateException("Browser name is not set in config.properties.");
         } else {
             return getPropValue("test.browser");
         }
@@ -60,8 +60,8 @@ public class ConfigurationPropertyReader {
 
     public static String getDriverPath() {
         if (null == getPropValue("driver.path")) {
-            Log.error("Input Data directory is not set in config.properties. ");
-            return "data";
+            Log.error("Driver path is not set in config.properties. ");
+            throw new IllegalStateException("Driver path is not set in config.properties.");
         } else {
             return getPropValue("driver.path");
         }
@@ -69,19 +69,10 @@ public class ConfigurationPropertyReader {
 
     public static String getApplicationUrl() {
         if (null == propertyMap.get("app.url")) {
-            Log.error("Input Data directory is not set in config.properties. ");
-            return "data";
+            Log.error("Application URL is not set in config.properties. ");
+            throw new IllegalStateException("Application  URL is not set in config.properties.");
         } else {
             return getPropValue("app.url");
-        }
-    }
-
-    public static String getFeatureFileLocation() {
-        if (null == propertyMap.get("featurefile.location")) {
-            Log.error("Input Data directory is not set in config.properties. ");
-            return "data";
-        } else {
-            return getPropValue("featurefile.location");
         }
     }
 
@@ -97,8 +88,7 @@ public class ConfigurationPropertyReader {
         propertyMap = new HashMap<String, String>((Map) prop);
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
-        ConfigurationPropertyReader con = new ConfigurationPropertyReader();
+    public static void main(String[] args)  {
         init();
         for (Map.Entry<String, String> entry : ConfigurationPropertyReader.propertyMap.entrySet()) {
             System.out.printf("Key : %s -- Value: %s %n", entry.getKey(), entry.getValue());
