@@ -41,7 +41,7 @@ public class ConfigurationPropertyReader {
     }
 
     public static String getDataDir() {
-        if (null == propertyMap.get("datafile.dir")) {
+        if (null == getPropValue("datafile.dir")) {
             Log.error("Input Data directory is not set in config.properties. ");
             throw new IllegalStateException("Input Data directory is not set in config.properties.");
         } else {
@@ -68,7 +68,7 @@ public class ConfigurationPropertyReader {
     }
 
     public static String getApplicationUrl() {
-        if (null == propertyMap.get("app.url")) {
+        if (null == getPropValue("app.url")) {
             Log.error("Application URL is not set in config.properties. ");
             throw new IllegalStateException("Application  URL is not set in config.properties.");
         } else {
