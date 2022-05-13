@@ -151,3 +151,4 @@ CucumberFramework.iml
 .idea/libraries/Maven__org_apache_commons_commons_text_1_9.xml
 CucumberFramework.iml
 *.iml
+target/test-classes/extent.properties
