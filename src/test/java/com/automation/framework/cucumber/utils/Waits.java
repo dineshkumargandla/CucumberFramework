@@ -28,7 +28,7 @@ public class Waits extends InitializeDriver {
         waitUntilCondition(condition, timeoutMessage, timeout);
     }
 
-    public void forElementToBeDisplayed(int timeout, WebElement webElement, String webElementName){
+    public static void forElementToBeDisplayed(int timeout, WebElement webElement, String webElementName){
         ExpectedCondition<WebElement> condition = ExpectedConditions.visibilityOf(webElement);
         String timeoutMessage = webElementName + " wasn't displayed after " + Integer.toString(timeout) + " seconds.";
         waitUntilCondition(condition, timeoutMessage, timeout);

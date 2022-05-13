@@ -24,9 +24,15 @@ public class LoginPage {
     @FindBy(xpath = "//strong[1]")
     private WebElement UserNameTittle;
 
+    @FindBy(xpath = "//div[@id='content']//li[1]")
+    private WebElement ErrorMessage;
+
+    @FindBy(xpath = "//div[@id='content']//li[1]")
+    private WebElement ErrorMessageInvalidPassword;
+
     public void enterUserName() {
         UserName.clear();
-        UserName.sendKeys("standard_user");
+        UserName.sendKeys("dinezh");
     }
 
     public void enterPassword() {
@@ -41,5 +47,21 @@ public class LoginPage {
     public boolean getUserName() {
         boolean isUserNamePresent = UserNameTittle.isDisplayed();
         return  isUserNamePresent;
+    }
+
+    public String getErrorMessage() {
+        String errorMessage = ErrorMessage.getText();
+        return  errorMessage;
+    }
+
+    public WebElement getUserNameTextBox() {
+        return UserName;
+    }
+
+    public String getErrorMessageInvalidPassword(String userName) {
+        String errorMessage = ErrorMessageInvalidPassword.getText();
+        int sepPos = errorMessage.lastIndexOf(userName);
+        System.out.println("Substring before last separator = "+errorMessage.substring(0,sepPos));
+        return  errorMessage.substring(0,sepPos).trim();
     }
 }
