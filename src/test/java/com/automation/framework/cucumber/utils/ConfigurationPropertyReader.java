@@ -3,7 +3,6 @@ package com.automation.framework.cucumber.utils;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
@@ -55,6 +54,15 @@ public class ConfigurationPropertyReader {
             throw new IllegalStateException("Browser name is not set in config.properties.");
         } else {
             return getPropValue("test.browser");
+        }
+    }
+
+    public static String getTimeout() {
+        if (null == getPropValue("timeout")) {
+            Log.error("Timeout is not set in config.properties.");
+            throw new IllegalStateException("Timeout is not set in config.properties.");
+        } else {
+            return getPropValue("timeout");
         }
     }
 

@@ -1,6 +1,7 @@
 package com.automation.framework.cucumber.Pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -21,32 +22,24 @@ public class LoginPage {
     @FindBy(xpath = "//button[@name='login']")
     private WebElement LoginButton;
 
-    @FindBy(xpath = "//strong[1]")
-    private WebElement UserNameTittle;
-
     @FindBy(xpath = "//div[@id='content']//li[1]")
     private WebElement ErrorMessage;
 
     @FindBy(xpath = "//div[@id='content']//li[1]")
     private WebElement ErrorMessageInvalidPassword;
 
-    public void enterUserName() {
+    public void enterUserName(String userName) {
         UserName.clear();
-        UserName.sendKeys("dinezh");
+        UserName.sendKeys(userName);
     }
 
-    public void enterPassword() {
+    public void enterPassword(String password) {
         Password.clear();
-        Password.sendKeys("secret_sauce");
+        Password.sendKeys(password);
     }
 
     public void clickLoginButton() {
         LoginButton.click();
-    }
-
-    public boolean getUserName() {
-        boolean isUserNamePresent = UserNameTittle.isDisplayed();
-        return  isUserNamePresent;
     }
 
     public String getErrorMessage() {

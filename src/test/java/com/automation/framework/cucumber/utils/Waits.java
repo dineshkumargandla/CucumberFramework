@@ -2,6 +2,7 @@ package com.automation.framework.cucumber.utils;
 
 import com.automation.framework.cucumber.setup.InitializeDriver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -38,5 +39,8 @@ public class Waits extends InitializeDriver {
         ExpectedCondition<List<WebElement>> condition = ExpectedConditions.presenceOfAllElementsLocatedBy(elementLocator);
         String timeoutMessage = elementName + " elements were not displayed after " + Integer.toString(timeout) + " seconds.";
         waitUntilCondition(condition, timeoutMessage, timeout);
+    }
+    public static void implicitWait(int timeout){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
     }
 }

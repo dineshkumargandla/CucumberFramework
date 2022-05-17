@@ -1,6 +1,7 @@
 package com.automation.framework.cucumber.Pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -18,4 +19,12 @@ public class HomePage {
         AccountMenu.click();
     }
 
+    public boolean getAccountTab() {
+        boolean isUserNamePresent = AccountMenu.isDisplayed();
+        return  isUserNamePresent;
+    }
+
+    public WebElement isAccountTabDisplayed() {
+        return AccountMenu;
+    }
 }
