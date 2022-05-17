@@ -40,6 +40,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -49,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 17, 2022 10:59:44 AM</span>
+			<span class='label blue darken-3 suite-start-time'>May 17, 2022 06:50:50 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -65,6 +66,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -119,12 +121,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$66%'>
                     <span class='strong'>2</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='33%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -137,12 +139,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='tooltipped' data-position='top' data-tooltip='84%'>
                     <span class='strong'>11</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='15%'>
+                    2</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -157,14 +159,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>33</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='89%'>
+                    <span class='strong'>35</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
+                    2</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
+                    2</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -188,7 +190,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Testing the Registration Page</span>
-						<span class='test-time'>May 17, 2022 10:59:48 AM</span>
+						<span class='test-time'>May 17, 2022 06:50:55 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -201,7 +203,7 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 01.993</span>
+	<span class='duration right label'>00 00 03.530</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration page without entering the values</div>
 	</div>
@@ -239,7 +241,7 @@
 </div>
 <div class='scenario outline node' test-id='9' status='pass'>
 
-	<span class='duration right label'>00 00 01.432</span>
+	<span class='duration right label'>00 00 02.529</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration by entering just username</div>
 	</div>
@@ -277,7 +279,7 @@
 </div>
 <div class='scenario outline node' test-id='16' status='pass'>
 
-	<span class='duration right label'>00 00 01.420</span>
+	<span class='duration right label'>00 00 02.438</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration by entering just emailAddress</div>
 	</div>
@@ -315,7 +317,7 @@
 </div>
 <div class='scenario outline node' test-id='23' status='pass'>
 
-	<span class='duration right label'>00 00 01.464</span>
+	<span class='duration right label'>00 00 02.295</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration by entering valid emailAddress and valid userName and empty password</div>
 	</div>
@@ -353,7 +355,7 @@
 </div>
 <div class='scenario outline node' test-id='30' status='pass'>
 
-	<span class='duration right label'>00 00 02.145</span>
+	<span class='duration right label'>00 00 02.266</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration with existing username and unregistered email id</div>
 	</div>
@@ -391,7 +393,7 @@
 </div>
 <div class='scenario outline node' test-id='37' status='pass'>
 
-	<span class='duration right label'>00 00 01.500</span>
+	<span class='duration right label'>00 00 02.211</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration with new username and already registered email id</div>
 	</div>
@@ -427,11 +429,27 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='44' status='pass'>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='44'>
+					<div class='test-heading'>
+						<span class='test-name'>Testing the Search and filter feature</span>
+						<span class='test-time'>May 17, 2022 06:51:10 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
 
-	<span class='duration right label'>00 00 03.665</span>
+<div class='scenario node' test-id='45' status='fail'>
+
+	<span class='duration right label'>00 00 02.046</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Make a user Registration with new username and new registered email id</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Testing the search feature</div>
 	</div>
 	
 	
@@ -440,18 +458,129 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='46' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.RegistrationPageTest.i_click_the_account_tab_registration_page_should_display())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click the Account tab Registration Page should display</div>
+		<li test-id='47' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.after_opening_the_application_click_on_the_store_tab_menu())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given After opening the application click on the store tab menu</div>
 
 
 		</li>
-		<li test-id='47' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.RegistrationPageTest.click_register_button_after_entering_a_new_email_id_and_new_username())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Click Register button after entering a new email id and new username</div>
+		<li test-id='48' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.search_for(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Search for "Shoes"</div>
 
 
 		</li>
-		<li test-id='48' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.RegistrationPageTest.an_hello_message_should_display_after_successful_registration_in_account_dashboard_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And An Hello Message should display after successful registration in Account Dashboard page</div>
+		<li test-id='49' class='node and Fail' status='Fail'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.search_result_should_return(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Search result should return "Shoes"</div>
+
+
+					<textarea disabled class="code-block">java.lang.AssertionError: expected [Shoes] but found [Anchor Bracelet]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.search_result_should_return(SearchAndFilterTest.java:80)
+	at ✽.Search result should return "Shoes"(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SearchandFilter.feature:9)
+</textarea>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='51' status='fail'>
+
+	<span class='duration right label'>00 00 00.999</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Testing the Filter category dropdown</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@PositiveTest</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='53' class='node given Fail' status='Fail'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.after_opening_the_application_click_on_the_store_tab_menu())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given After opening the application click on the store tab menu</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'HOMEDELL', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f36a3e1c1a5511cf32d2908c029de671, isElementDisplayed {id=75afab87-a1c9-46ea-a0ee-489e464fd062}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\chekr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59238/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f36a3e1c1a5511cf32d2908c029de671)] -> xpath: //li[@id='menu-item-1237']//a[@class='menu-link'][contains(text(),'Account')]]
+Session ID: f36a3e1c1a5511cf32d2908c029de671
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:307)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.automation.framework.cucumber.utils.Waits.waitUntilCondition(Waits.java:23)
+	at com.automation.framework.cucumber.utils.Waits.forElementToBeDisplayed(Waits.java:35)
+	at com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.after_opening_the_application_click_on_the_store_tab_menu(SearchAndFilterTest.java:18)
+	at ✽.After opening the application click on the store tab menu(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SearchandFilter.feature:4)
+</textarea>
+		</li>
+		<li test-id='54' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.browse_by_categories_select(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Browse by Categories select "Men "</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='55' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.all_the_items_displays_should_be_of_men(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And All the items displays should be of "Men"</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='57' status='pass'>
+
+	<span class='duration right label'>00 00 01.998</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Filter price side bar</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@PositiveTest</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='59' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.after_opening_the_application_click_on_the_store_tab_menu())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given After opening the application click on the store tab menu</div>
+
+
+		</li>
+		<li test-id='60' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.adjust_the_filter_to_certain_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Adjust the filter to certain price</div>
+
+
+		</li>
+		<li test-id='61' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.results_should_not_be_greater_than_the_max_price_filter())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And results should not be greater than the max price filter</div>
 
 
 		</li>
@@ -459,10 +588,10 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='50'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='63'>
 					<div class='test-heading'>
 						<span class='test-name'>Testing the Login Page</span>
-						<span class='test-time'>May 17, 2022 11:00:02 AM</span>
+						<span class='test-time'>May 17, 2022 06:51:15 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -473,9 +602,9 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='51' status='pass'>
+<div class='scenario node' test-id='64' status='pass'>
 
-	<span class='duration right label'>00 00 01.869</span>
+	<span class='duration right label'>00 00 01.690</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Login Page without passing credentials</div>
 	</div>
@@ -486,26 +615,26 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='53' class='node when Pass' status='Pass'>
+		<li test-id='66' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I have opened the application</div>
 
 
 		</li>
-		<li test-id='54' class='node then Pass' status='Pass'>
+		<li test-id='67' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.click_login_without_passing_username_and_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Click Login without passing username and password</div>
 
 
 		</li>
-		<li test-id='55' class='node and Pass' status='Pass'>
+		<li test-id='68' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.we_need_to_get_the_error_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And We need to get the 'Error: Username is required.' error message</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='57' status='pass'>
+<div class='scenario node' test-id='70' status='pass'>
 
-	<span class='duration right label'>00 00 01.542</span>
+	<span class='duration right label'>00 00 01.846</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Login Page by passing the valid username and empty password</div>
 	</div>
@@ -516,26 +645,26 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='59' class='node when Pass' status='Pass'>
+		<li test-id='72' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I have opened the application</div>
 
 
 		</li>
-		<li test-id='60' class='node then Pass' status='Pass'>
+		<li test-id='73' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.click_login_button_after_entering_the_username())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Click Login button after entering the username</div>
 
 
 		</li>
-		<li test-id='61' class='node and Pass' status='Pass'>
+		<li test-id='74' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.we_need_to_get_the_error_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And We need to get the 'Error: The password field is empty.' error message</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='63' status='pass'>
+<div class='scenario node' test-id='76' status='pass'>
 
-	<span class='duration right label'>00 00 01.549</span>
+	<span class='duration right label'>00 00 02.233</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Login Page by passing the valid username and invalid password</div>
 	</div>
@@ -546,26 +675,26 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='65' class='node when Pass' status='Pass'>
+		<li test-id='78' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I have opened the application</div>
 
 
 		</li>
-		<li test-id='66' class='node then Pass' status='Pass'>
+		<li test-id='79' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.click_login_button_after_entering_the_username_and_invalid_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Click Login button after entering the username and invalid password</div>
 
 
 		</li>
-		<li test-id='67' class='node and Pass' status='Pass'>
+		<li test-id='80' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.we_need_to_get_the_partial_error_message_as(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And We need to get the partial error message as 'Error: The password you entered for the username'</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='69' status='pass'>
+<div class='scenario node' test-id='82' status='pass'>
 
-	<span class='duration right label'>00 00 03.447</span>
+	<span class='duration right label'>00 00 04.364</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Login Page with Valid Credentials</div>
 	</div>
@@ -576,17 +705,17 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='71' class='node when Pass' status='Pass'>
+		<li test-id='84' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I have opened the application</div>
 
 
 		</li>
-		<li test-id='72' class='node then Pass' status='Pass'>
+		<li test-id='85' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.login_with_the_valid_user())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Login with the valid user</div>
 
 
 		</li>
-		<li test-id='73' class='node and Pass' status='Pass'>
+		<li test-id='86' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.make_sure_the_login_happens())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And make Sure the login happens</div>
 
 
@@ -659,78 +788,78 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 17, 2022 10:59:48 AM</td>
+										<td>May 17, 2022 06:50:55 PM</td>
 										<td class='linked' test-id='2'>Make a user Registration page without entering the values</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:48 AM</td>
+										<td>May 17, 2022 06:50:55 PM</td>
 										<td class='linked' test-id='3'>Make a user Registration page without entering the values</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:50 AM</td>
+										<td>May 17, 2022 06:50:58 PM</td>
 										<td class='linked' test-id='9'>Make a user Registration by entering just username</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:50 AM</td>
+										<td>May 17, 2022 06:50:58 PM</td>
 										<td class='linked' test-id='10'>Make a user Registration by entering just username</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:52 AM</td>
+										<td>May 17, 2022 06:51:01 PM</td>
 										<td class='linked' test-id='16'>Make a user Registration by entering just emailAddress</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:52 AM</td>
+										<td>May 17, 2022 06:51:01 PM</td>
 										<td class='linked' test-id='17'>Make a user Registration by entering just emailAddress</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:53 AM</td>
+										<td>May 17, 2022 06:51:03 PM</td>
 										<td class='linked' test-id='23'>Make a user Registration by entering valid emailAddress and valid userName and empty password</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:53 AM</td>
+										<td>May 17, 2022 06:51:03 PM</td>
 										<td class='linked' test-id='24'>Make a user Registration by entering valid emailAddress and valid userName and empty password</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:55 AM</td>
+										<td>May 17, 2022 06:51:06 PM</td>
 										<td class='linked' test-id='30'>Make a user Registration with existing username and unregistered email id</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:55 AM</td>
+										<td>May 17, 2022 06:51:06 PM</td>
 										<td class='linked' test-id='31'>Make a user Registration with existing username and unregistered email id</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:57 AM</td>
+										<td>May 17, 2022 06:51:08 PM</td>
 										<td class='linked' test-id='37'>Make a user Registration with new username and already registered email id</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 10:59:57 AM</td>
+										<td>May 17, 2022 06:51:08 PM</td>
 										<td class='linked' test-id='38'>Make a user Registration with new username and already registered email id</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 11:00:02 AM</td>
-										<td class='linked' test-id='51'>Testing the Login Page without passing credentials</td>
+										<td>May 17, 2022 06:51:15 PM</td>
+										<td class='linked' test-id='64'>Testing the Login Page without passing credentials</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 11:00:04 AM</td>
-										<td class='linked' test-id='57'>Testing the Login Page by passing the valid username and empty password</td>
+										<td>May 17, 2022 06:51:17 PM</td>
+										<td class='linked' test-id='70'>Testing the Login Page by passing the valid username and empty password</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 11:00:05 AM</td>
-										<td class='linked' test-id='63'>Testing the Login Page by passing the valid username and invalid password</td>
+										<td>May 17, 2022 06:51:19 PM</td>
+										<td class='linked' test-id='76'>Testing the Login Page by passing the valid username and invalid password</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -743,12 +872,13 @@
 						<span class='category-name'>@PositiveTest</span>
 						<span class='category-status right'>
 						<span class='label pass'>2</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
-							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -762,13 +892,23 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 17, 2022 10:59:58 AM</td>
-										<td class='linked' test-id='44'>Make a user Registration with new username and new registered email id</td>
+										<td>May 17, 2022 06:51:10 PM</td>
+										<td class='linked' test-id='45'>Testing the search feature</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>May 17, 2022 06:51:12 PM</td>
+										<td class='linked' test-id='51'>Testing the Filter category dropdown</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>May 17, 2022 06:51:13 PM</td>
+										<td class='linked' test-id='57'>Testing the Filter price side bar</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 17, 2022 11:00:07 AM</td>
-										<td class='linked' test-id='69'>Testing the Login Page with Valid Credentials</td>
+										<td>May 17, 2022 06:51:21 PM</td>
+										<td class='linked' test-id='82'>Testing the Login Page with Valid Credentials</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -785,7 +925,137 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.StaleElementReferenceException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 17, 2022 06:51:12 PM</td>
+										<td class='linked' test-id='53'>Given After opening the application click on the store tab menu</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'HOMEDELL', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f36a3e1c1a5511cf32d2908c029de671, isElementDisplayed {id=75afab87-a1c9-46ea-a0ee-489e464fd062}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\chekr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59238/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f36a3e1c1a5511cf32d2908c029de671)] -> xpath: //li[@id='menu-item-1237']//a[@class='menu-link'][contains(text(),'Account')]]
+Session ID: f36a3e1c1a5511cf32d2908c029de671
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:307)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.automation.framework.cucumber.utils.Waits.waitUntilCondition(Waits.java:23)
+	at com.automation.framework.cucumber.utils.Waits.forElementToBeDisplayed(Waits.java:35)
+	at com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.after_opening_the_application_click_on_the_store_tab_menu(SearchAndFilterTest.java:18)
+	at ✽.After opening the application click on the store tab menu(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SearchandFilter.feature:4)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 17, 2022 06:51:12 PM</td>
+										<td class='linked' test-id='49'>And Search result should return "Shoes"</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Shoes] but found [Anchor Bracelet]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.automation.framework.cucumber.stepdefinations.SearchAndFilterTest.search_result_should_return(SearchAndFilterTest.java:80)
+	at ✽.Search result should return "Shoes"(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SearchandFilter.feature:9)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -793,37 +1063,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>13</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>33</div>
+					<div class='panel-lead'>39</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 17, 2022 10:59:44 AM</div>
+					<div class='panel-lead'>May 17, 2022 06:50:50 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 17, 2022 11:00:11 AM</div>
+			 		<div class='panel-lead'>May 17, 2022 06:51:26 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 26.737</div>
+					<div class='panel-lead'>00 00 36.573</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -850,10 +1120,10 @@
 						<tr>
 							<td>@PositiveTest</td>
 							<td>2</td>
-							<td>0</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									100%
+									50%
 							</td>
 						</tr>
 					</table>
@@ -867,35 +1137,35 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 2,
+                parentCount: 3,
 				passParent: 2,
-				failParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 11,
+				childCount: 13,
 				passChild: 11,
-				failChild: 0,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 33,
-				passGrandChild: 33,
-				failGrandChild: 0,
+				grandChildCount: 39,
+				passGrandChild: 35,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 2,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Testing the Registration Page":13.668,"Testing the Login Page":8.432
+			        "Testing the Registration Page":15.369,"Testing the Search and filter feature":5.09,"Testing the Login Page":10.17
 			};
 		</script>
 		

@@ -35,7 +35,7 @@ public class Waits extends InitializeDriver {
         waitUntilCondition(condition, timeoutMessage, timeout);
     }
 
-    public void forPresenceOfElements(int timeout, By elementLocator, String elementName){
+    public static void forPresenceOfElements(int timeout, By elementLocator, String elementName){
         ExpectedCondition<List<WebElement>> condition = ExpectedConditions.presenceOfAllElementsLocatedBy(elementLocator);
         String timeoutMessage = elementName + " elements were not displayed after " + Integer.toString(timeout) + " seconds.";
         waitUntilCondition(condition, timeoutMessage, timeout);

@@ -13,8 +13,8 @@ import org.testng.annotations.DataProvider;
         glue = {"com.automation.framework.cucumber.stepdefinations",
                 "com.automation.framework.cucumber.hooks"},
         features = "src/test/java/com/automation/framework/cucumber/feature",
-        //tags = "@NegativeTest,@PositiveTest",
-        monochrome = false
+        //tags = "@build",
+        monochrome = true
 )
 public class MyTestNGRunnerTest extends AbstractTestNGCucumberTests {
 /*   @Override

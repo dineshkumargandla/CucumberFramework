@@ -15,8 +15,15 @@ public class HomePage {
     @FindBy(xpath = "//li[@id='menu-item-1237']//a[@class='menu-link'][contains(text(),'Account')]")
     private WebElement AccountMenu;
 
+    @FindBy(xpath = "//li[@id='menu-item-1227']//a[@class='menu-link'][contains(text(),'Store')]")
+    private WebElement StoreMenu;
+
     public void  ClickAccountMenu() {
         AccountMenu.click();
+    }
+
+    public void  ClickStoreMenu() {
+        StoreMenu.click();
     }
 
     public boolean getAccountTab() {

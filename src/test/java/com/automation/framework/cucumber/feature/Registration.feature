@@ -76,7 +76,7 @@ Feature: Testing the Registration Page
       | actualErrorMessage                                                                |
       | "Error: An account is already registered with your email address. Please log in." |
 
-  @PositiveTest
-  Scenario: Make a user Registration with new username and new registered email id
-    Then Click Register button after entering a new email id and new username
-    And An Hello Message should display after successful registration in Account Dashboard page
+#  @PositiveTest
+#  Scenario: Make a user Registration with new username and new registered email id
+#    Then Click Register button after entering a new email id and new username
+#    And An Hello Message should display after successful registration in Account Dashboard page

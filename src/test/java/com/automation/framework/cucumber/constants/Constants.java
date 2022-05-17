@@ -1,9 +1,6 @@
 package com.automation.framework.cucumber.constants;
 
-import com.automation.framework.cucumber.Pages.HomePage;
-import com.automation.framework.cucumber.Pages.LoginPage;
-import com.automation.framework.cucumber.Pages.RegisterPage;
-import com.automation.framework.cucumber.Pages.UserAccountPage;
+import com.automation.framework.cucumber.Pages.*;
 
 public class Constants {
 
@@ -14,5 +11,7 @@ public class Constants {
    public static UserAccountPage USER_ACCOUNT_PAGE = new UserAccountPage();
 
    public static RegisterPage REGISTRATION_PAGE = new RegisterPage();
+
+   public static StorePage STORE_PAGE = new StorePage();
 
 }

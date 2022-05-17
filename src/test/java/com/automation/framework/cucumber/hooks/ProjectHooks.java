@@ -14,15 +14,15 @@ public class ProjectHooks extends InitializeDriver{
 
     @Before
     public  void beforeScenario(Scenario scenario)  {
-       System.out.println("BEFORE: THREAD ID : " + Thread.currentThread().getId() + "," +
+       System.out.println("Executing Scenario ID : " + scenario.getId() + "," +
                 "SCENARIO NAME: " + scenario.getName());
         System.out.println("Scenario stated executing at " + DateAndTimeUtils.getCurrentDate() + " and " +DateAndTimeUtils.getCurrentTime());
     }
 
     @After
     public  void afterScenario(Scenario scenario)  {
-        System.out.println("After THREAD ID : " + Thread.currentThread().getId() + "," +
-                "SCENARIO NAME: " + scenario.getName());
+        System.out.println("Execution of Scenario ID : " + scenario.getId() + "," +
+                "SCENARIO NAME: " + scenario.getName() + " is completed..!");
         System.out.println("Scenario ended executing at " + DateAndTimeUtils.getCurrentDate() + " and " +DateAndTimeUtils.getCurrentTime());
     }
     @BeforeAll
@@ -35,9 +35,8 @@ public class ProjectHooks extends InitializeDriver{
 
     @AfterAll
     public  static void afterAll() {
-        System.out.println("AFTER: THREAD ID : " + Thread.currentThread().getId() + "," +
-                "SCENARIO NAME: ");
+
         System.out.println("Scenario execution ended at  " + DateAndTimeUtils.getCurrentDate() + " and " + DateAndTimeUtils.getCurrentTime());
-        driver.close();
+        driver.quit();
     }
 }
