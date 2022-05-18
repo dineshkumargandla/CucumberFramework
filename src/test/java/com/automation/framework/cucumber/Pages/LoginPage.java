@@ -1,10 +1,10 @@
 package com.automation.framework.cucumber.Pages;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import static com.automation.framework.cucumber.constants.Constants.BASE_PAGE;
 import static com.automation.framework.cucumber.setup.InitializeDriver.driver;
 
 public class LoginPage {
@@ -29,32 +29,37 @@ public class LoginPage {
     private WebElement ErrorMessageInvalidPassword;
 
     public void enterUserName(String userName) {
+        BASE_PAGE.highlight(driver,UserName);
         UserName.clear();
         UserName.sendKeys(userName);
     }
 
     public void enterPassword(String password) {
+        BASE_PAGE.highlight(driver,Password);
         Password.clear();
         Password.sendKeys(password);
     }
 
     public void clickLoginButton() {
+        BASE_PAGE.highlight(driver,LoginButton);
         LoginButton.click();
     }
 
     public String getErrorMessage() {
+        BASE_PAGE.highlight(driver,ErrorMessage);
         String errorMessage = ErrorMessage.getText();
         return  errorMessage;
     }
 
     public WebElement getUserNameTextBox() {
+        BASE_PAGE.highlight(driver,UserName);
         return UserName;
     }
 
     public String getErrorMessageInvalidPassword(String userName) {
+        BASE_PAGE.highlight(driver,ErrorMessageInvalidPassword);
         String errorMessage = ErrorMessageInvalidPassword.getText();
         int sepPos = errorMessage.lastIndexOf(userName);
-        System.out.println("Substring before last separator = "+errorMessage.substring(0,sepPos));
         return  errorMessage.substring(0,sepPos).trim();
     }
 }

@@ -66,6 +66,43 @@ public class ConfigurationPropertyReader {
         }
     }
 
+    public static String getProductName() {
+        if (null == getPropValue("product.name")) {
+            Log.error("Product Name is not set in config.properties.");
+            throw new IllegalStateException("Timeout is not set in config.properties.");
+        } else {
+            return getPropValue("product.name");
+        }
+    }
+
+    public static String getProductVersion() {
+        if (null == getPropValue("product.version")) {
+            Log.error("Product version is not set in config.properties.");
+            throw new IllegalStateException("Timeout is not set in config.properties.");
+        } else {
+            return getPropValue("product.version");
+        }
+    }
+
+
+    public static String getProductBuild() {
+        if (null == getPropValue("product.build")) {
+            Log.error("Product Build is not set in config.properties.");
+            throw new IllegalStateException("Product Build is not set in config.properties.");
+        } else {
+            return getPropValue("product.build");
+        }
+    }
+
+    public static String getTakeShootsOnFailure() {
+        if (null == getPropValue("take.screenshot.on.failure")) {
+            Log.error("Take screenshot on failure is not set in config.properties.");
+            throw new IllegalStateException("Take screenshot on failure is not set in config.properties.");
+        } else {
+            return getPropValue("take.screenshot.on.failure");
+        }
+    }
+
     public static String getDriverPath() {
         if (null == getPropValue("driver.path")) {
             Log.error("Driver path is not set in config.properties. ");

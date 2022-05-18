@@ -14,4 +14,7 @@ public class Constants {
 
    public static StorePage STORE_PAGE = new StorePage();
 
+   public static CheckoutPage CHECKOUT_PAGE = new CheckoutPage();
+
+   public static BasePage BASE_PAGE = new BasePage();
 }
