@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 18, 2022 05:58:23 PM</span>
+			<span class='label blue darken-3 suite-start-time'>May 19, 2022 12:09:49 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -66,7 +65,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -78,9 +76,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@build</a></li>
-					<li><a href='#'>@NegativeTest</a></li>
 					<li><a href='#'>@PositiveTest</a></li>
+					<li><a href='#'>@NegativeTest</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -122,12 +119,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$25%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>4</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='75%'>
-                    3</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -140,12 +137,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='43%'>
-                    <span class='strong'>7</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>15</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='56%'>
-                    9</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -160,14 +157,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='64%'>
-                    <span class='strong'>32</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>47</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='18%'>
-                    9</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='18%'>
-                    9</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -191,7 +188,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Testing the Checkout Feature</span>
-						<span class='test-time'>May 18, 2022 05:58:27 PM</span>
+						<span class='test-time'>May 19, 2022 12:09:53 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -204,7 +201,7 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 24.615</span>
+	<span class='duration right label'>00 00 24.289</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Testing the Shopping cart and Add to cart option</div>
 	</div>
@@ -246,11 +243,11 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='10'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='10'>
 					<div class='test-heading'>
 						<span class='test-name'>Testing the Registration Page</span>
-						<span class='test-time'>May 18, 2022 05:58:52 PM</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>May 19, 2022 12:10:18 PM</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -262,7 +259,7 @@
 
 <div class='scenario outline node' test-id='11' status='pass'>
 
-	<span class='duration right label'>00 00 01.554</span>
+	<span class='duration right label'>00 00 01.438</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration page without entering the values</div>
 	</div>
@@ -300,7 +297,7 @@
 </div>
 <div class='scenario outline node' test-id='18' status='pass'>
 
-	<span class='duration right label'>00 00 03.596</span>
+	<span class='duration right label'>00 00 03.546</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration by entering just username</div>
 	</div>
@@ -338,7 +335,7 @@
 </div>
 <div class='scenario outline node' test-id='25' status='pass'>
 
-	<span class='duration right label'>00 00 01.737</span>
+	<span class='duration right label'>00 00 01.502</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration by entering just emailAddress</div>
 	</div>
@@ -376,7 +373,7 @@
 </div>
 <div class='scenario outline node' test-id='32' status='pass'>
 
-	<span class='duration right label'>00 00 03.779</span>
+	<span class='duration right label'>00 00 03.848</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration by entering valid emailAddress and valid userName and empty password</div>
 	</div>
@@ -414,7 +411,7 @@
 </div>
 <div class='scenario outline node' test-id='39' status='pass'>
 
-	<span class='duration right label'>00 00 03.781</span>
+	<span class='duration right label'>00 00 03.558</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration with existing username and unregistered email id</div>
 	</div>
@@ -452,7 +449,7 @@
 </div>
 <div class='scenario outline node' test-id='46' status='pass'>
 
-	<span class='duration right label'>00 00 03.686</span>
+	<span class='duration right label'>00 00 03.527</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Make a user Registration with new username and already registered email id</div>
 	</div>
@@ -488,16 +485,16 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='53' status='fail'>
+<div class='scenario node' test-id='53' status='pass'>
 
-	<span class='duration right label'>00 00 06.398</span>
+	<span class='duration right label'>00 00 07.883</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Make a user Registration with new username and new registered email id</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Make a user Registration with new username and new registered email id</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@build</span>
+				<span class='category label'>@PositiveTest</span>
 		</div>
 	
 	<ul class='steps'>
@@ -511,28 +508,20 @@
 
 
 		</li>
-		<li test-id='57' class='node then Fail' status='Fail'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.RegistrationPageTest.an_hello_message_should_display_after_successful_registration_in_account_dashboard_page())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then An Hello Message should display after successful registration in Account Dashboard page</div>
+		<li test-id='57' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.RegistrationPageTest.an_hello_message_should_display_after_successful_registration_in_account_dashboard_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then An Hello Message should display after successful registration in Account Dashboard page</div>
 
 
-					<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.automation.framework.cucumber.stepdefinations.RegistrationPageTest.an_hello_message_should_display_after_successful_registration_in_account_dashboard_page(RegistrationPageTest.java:91)
-	at ✽.An Hello Message should display after successful registration in Account Dashboard page(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/Registration.feature:82)
-</textarea>
 		</li>
 	</ul>
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='59'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='59'>
 					<div class='test-heading'>
 						<span class='test-name'>Testing the Login Page</span>
-						<span class='test-time'>May 18, 2022 05:59:17 PM</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>May 19, 2022 12:10:43 PM</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -542,11 +531,11 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='60' status='fail'>
+<div class='scenario node' test-id='60' status='pass'>
 
-	<span class='duration right label'>00 00 00.772</span>
+	<span class='duration right label'>00 00 01.394</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Testing the Login Page without passing credentials</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Login Page without passing credentials</div>
 	</div>
 	
 	
@@ -555,71 +544,28 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='62' class='node given Fail' status='Fail'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given I have opened the application</div>
+		<li test-id='62' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I have opened the application</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='username']"}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'HOMEDELL', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4cc6aecc4f9bf9a753f48e38562952dd, findElement {using=xpath, value=//input[@id='username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\chekr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64978/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy30.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:498)
-	at com.automation.framework.cucumber.Pages.BasePage.highlight(BasePage.java:58)
-	at com.automation.framework.cucumber.Pages.LoginPage.getUserNameTextBox(LoginPage.java:55)
-	at com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application(SignInTest.java:22)
-	at ✽.I have opened the application(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SignIn.feature:4)
-</textarea>
 		</li>
-		<li test-id='63' class='node when Skip' status='Skip'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.click_login_without_passing_username_and_password())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When Click Login without passing username and password</div>
+		<li test-id='63' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.click_login_without_passing_username_and_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click Login without passing username and password</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='64' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.we_need_to_get_the_error_message(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then We need to get the 'Error: Username is required.' error message</div>
+		<li test-id='64' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.we_need_to_get_the_error_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then We need to get the 'Error: Username is required.' error message</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='66' status='fail'>
+<div class='scenario node' test-id='66' status='pass'>
 
-	<span class='duration right label'>00 00 00.729</span>
+	<span class='duration right label'>00 00 01.618</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Testing the Login Page by passing the valid username and empty password</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Login Page by passing the valid username and empty password</div>
 	</div>
 	
 	
@@ -628,71 +574,28 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='68' class='node given Fail' status='Fail'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given I have opened the application</div>
+		<li test-id='68' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I have opened the application</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='username']"}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'HOMEDELL', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4cc6aecc4f9bf9a753f48e38562952dd, findElement {using=xpath, value=//input[@id='username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\chekr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64978/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy30.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:498)
-	at com.automation.framework.cucumber.Pages.BasePage.highlight(BasePage.java:58)
-	at com.automation.framework.cucumber.Pages.LoginPage.getUserNameTextBox(LoginPage.java:55)
-	at com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application(SignInTest.java:22)
-	at ✽.I have opened the application(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SignIn.feature:4)
-</textarea>
 		</li>
-		<li test-id='69' class='node when Skip' status='Skip'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.click_login_button_after_entering_the_username())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When Click Login button after entering the username</div>
+		<li test-id='69' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.click_login_button_after_entering_the_username())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click Login button after entering the username</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='70' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.we_need_to_get_the_error_message(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then We need to get the 'Error: The password field is empty.' error message</div>
+		<li test-id='70' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.we_need_to_get_the_error_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then We need to get the 'Error: The password field is empty.' error message</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='72' status='fail'>
+<div class='scenario node' test-id='72' status='pass'>
 
-	<span class='duration right label'>00 00 00.731</span>
+	<span class='duration right label'>00 00 01.708</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Testing the Login Page by passing the valid username and invalid password</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Login Page by passing the valid username and invalid password</div>
 	</div>
 	
 	
@@ -701,71 +604,28 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='74' class='node given Fail' status='Fail'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given I have opened the application</div>
+		<li test-id='74' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I have opened the application</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='username']"}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'HOMEDELL', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4cc6aecc4f9bf9a753f48e38562952dd, findElement {using=xpath, value=//input[@id='username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\chekr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64978/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy30.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:498)
-	at com.automation.framework.cucumber.Pages.BasePage.highlight(BasePage.java:58)
-	at com.automation.framework.cucumber.Pages.LoginPage.getUserNameTextBox(LoginPage.java:55)
-	at com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application(SignInTest.java:22)
-	at ✽.I have opened the application(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SignIn.feature:4)
-</textarea>
 		</li>
-		<li test-id='75' class='node when Skip' status='Skip'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.click_login_button_after_entering_the_username_and_invalid_password())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When Click Login button after entering the username and invalid password</div>
+		<li test-id='75' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.click_login_button_after_entering_the_username_and_invalid_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click Login button after entering the username and invalid password</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='76' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.we_need_to_get_the_partial_error_message_as(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then We need to get the partial error message as 'Error: The password you entered for the username'</div>
+		<li test-id='76' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.we_need_to_get_the_partial_error_message_as(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then We need to get the partial error message as 'Error: The password you entered for the username'</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='78' status='fail'>
+<div class='scenario node' test-id='78' status='pass'>
 
-	<span class='duration right label'>00 00 00.739</span>
+	<span class='duration right label'>00 00 03.678</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Testing the Login Page with Valid Credentials</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Login Page with Valid Credentials</div>
 	</div>
 	
 	
@@ -774,73 +634,30 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='80' class='node given Fail' status='Fail'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given I have opened the application</div>
+		<li test-id='80' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I have opened the application</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='username']"}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'HOMEDELL', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4cc6aecc4f9bf9a753f48e38562952dd, findElement {using=xpath, value=//input[@id='username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\chekr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64978/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy30.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:498)
-	at com.automation.framework.cucumber.Pages.BasePage.highlight(BasePage.java:58)
-	at com.automation.framework.cucumber.Pages.LoginPage.getUserNameTextBox(LoginPage.java:55)
-	at com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application(SignInTest.java:22)
-	at ✽.I have opened the application(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SignIn.feature:4)
-</textarea>
 		</li>
-		<li test-id='81' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.login_with_the_valid_user())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Login with the valid user</div>
+		<li test-id='81' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.login_with_the_valid_user())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Login with the valid user</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='82' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.make_sure_the_login_happens())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And make Sure the login happens</div>
+		<li test-id='82' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.SignInTest.make_sure_the_login_happens())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And make Sure the login happens</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='84'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='84'>
 					<div class='test-heading'>
 						<span class='test-name'>Testing the Search and filter feature</span>
-						<span class='test-time'>May 18, 2022 05:59:20 PM</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>May 19, 2022 12:10:51 PM</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -850,11 +667,11 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='85' status='fail'>
+<div class='scenario node' test-id='85' status='pass'>
 
-	<span class='duration right label'>00 00 01.871</span>
+	<span class='duration right label'>00 00 01.781</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Testing the search feature</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Filter price side bar</div>
 	</div>
 	
 	
@@ -869,27 +686,22 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 
 		</li>
 		<li test-id='88' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.search_for(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Search for "Shoes"</div>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.adjust_the_filter_to_certain_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Adjust the filter to certain price</div>
 
 
 		</li>
-		<li test-id='89' class='node then Fail' status='Fail'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.search_result_should_return(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Search result should return "Shoes"</div>
+		<li test-id='89' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.results_should_not_be_greater_than_the_max_price_filter())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then results should not be greater than the max price filter</div>
 
 
-					<textarea disabled class="code-block">java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class org.openqa.selenium.WebElement (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.openqa.selenium.WebElement is in unnamed module of loader 'app')
-	at com.automation.framework.cucumber.Pages.StorePage.getAllProductNames(StorePage.java:118)
-	at com.automation.framework.cucumber.stepdefinations.StorePageTest.search_result_should_return(StorePageTest.java:75)
-	at ✽.Search result should return "Shoes"(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/Store.feature:9)
-</textarea>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='91' status='fail'>
+<div class='scenario node' test-id='91' status='pass'>
 
-	<span class='duration right label'>00 00 00.889</span>
+	<span class='duration right label'>00 00 06.032</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Testing the Filter category dropdown</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the search feature</div>
 	</div>
 	
 	
@@ -903,29 +715,23 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 
 
 		</li>
-		<li test-id='94' class='node when Fail' status='Fail'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.browse_by_categories_select(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When Browse by Categories select "Men "</div>
+		<li test-id='94' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.search_for(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Search for "Shoes"</div>
 
 
-					<textarea disabled class="code-block">java.lang.ClassCastException: class org.openqa.selenium.support.ui.Select cannot be cast to class org.openqa.selenium.WebElement (org.openqa.selenium.support.ui.Select and org.openqa.selenium.WebElement are in unnamed module of loader 'app')
-	at com.automation.framework.cucumber.Pages.StorePage.getAllOptionsFromDropDown(StorePage.java:52)
-	at com.automation.framework.cucumber.stepdefinations.StorePageTest.browse_by_categories_select(StorePageTest.java:26)
-	at ✽.Browse by Categories select "Men "(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/Store.feature:13)
-</textarea>
 		</li>
-		<li test-id='95' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.all_the_items_displays_should_be_of_men(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then All the items displays should be of "Men"</div>
+		<li test-id='95' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.search_result_should_return(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Search result should return "Shoes"</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='97' status='fail'>
+<div class='scenario node' test-id='97' status='pass'>
 
-	<span class='duration right label'>00 00 01.975</span>
+	<span class='duration right label'>00 00 02.854</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Testing the Filter price side bar</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Testing the Shopping cart and Add to cart option</div>
 	</div>
 	
 	
@@ -939,65 +745,20 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 
 
 		</li>
-		<li test-id='100' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.adjust_the_filter_to_certain_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Adjust the filter to certain price</div>
-
-
-		</li>
-		<li test-id='101' class='node then Fail' status='Fail'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.results_should_not_be_greater_than_the_max_price_filter())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then results should not be greater than the max price filter</div>
-
-
-					<textarea disabled class="code-block">java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class org.openqa.selenium.WebElement (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.openqa.selenium.WebElement is in unnamed module of loader 'app')
-	at com.automation.framework.cucumber.Pages.StorePage.getAllProductPrice(StorePage.java:102)
-	at com.automation.framework.cucumber.stepdefinations.StorePageTest.results_should_not_be_greater_than_the_max_price_filter(StorePageTest.java:55)
-	at ✽.results should not be greater than the max price filter(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/Store.feature:19)
-</textarea>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='103' status='fail'>
-
-	<span class='duration right label'>00 00 03.183</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Testing the Shopping cart and Add to cart option</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@PositiveTest</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='105' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.after_opening_the_application_click_on_the_store_tab_menu())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given After opening the application click on the store tab menu</div>
-
-
-		</li>
-		<li test-id='106' class='node given Pass' status='Pass'>
+		<li test-id='100' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.open_the_application_and_select_the_mens_section())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Open the Application  and select the Mens section</div>
 
 
 		</li>
-		<li test-id='107' class='node when Pass' status='Pass'>
+		<li test-id='101' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.selecting_the_basic_blue_jeans_in_the_mens_section())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Selecting the Basic Blue Jeans in the mens section</div>
 
 
 		</li>
-		<li test-id='108' class='node then Fail' status='Fail'>
-			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.item_is_added_to_the_shopping_cart(int))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then 1 item is added to the Shopping cart</div>
+		<li test-id='102' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.automation.framework.cucumber.stepdefinations.StorePageTest.item_is_added_to_the_shopping_cart(int))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then 1 item is added to the Shopping cart</div>
 
 
-					<textarea disabled class="code-block">java.lang.AssertionError: expected [1] but found [11]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.automation.framework.cucumber.stepdefinations.StorePageTest.item_is_added_to_the_shopping_cart(StorePageTest.java:98)
-	at ✽.1 item is added to the Shopping cart(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/Store.feature:25)
-</textarea>
 		</li>
 	</ul>
 </div>
@@ -1045,15 +806,15 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@build</span>
+						<span class='category-name'>@PositiveTest</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>7</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 7</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -1067,9 +828,39 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2022 05:59:10 PM</td>
+										<td>May 19, 2022 12:09:53 PM</td>
+										<td class='linked' test-id='2'>Testing the Shopping cart and Add to cart option</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 19, 2022 12:09:53 PM</td>
+										<td class='linked' test-id='3'>Testing the Shopping cart and Add to cart option</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 19, 2022 12:10:35 PM</td>
 										<td class='linked' test-id='53'>Make a user Registration with new username and new registered email id</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 19, 2022 12:10:48 PM</td>
+										<td class='linked' test-id='78'>Testing the Login Page with Valid Credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 19, 2022 12:10:51 PM</td>
+										<td class='linked' test-id='85'>Testing the Filter price side bar</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 19, 2022 12:10:53 PM</td>
+										<td class='linked' test-id='91'>Testing the search feature</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 19, 2022 12:10:59 PM</td>
+										<td class='linked' test-id='97'>Testing the Shopping cart and Add to cart option</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1080,14 +871,13 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 					<div class='category-heading'>
 						<span class='category-name'>@NegativeTest</span>
 						<span class='category-status right'>
-						<span class='label pass'>12</span>
-						<span class='label fail'>3</span>
+						<span class='label pass'>15</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 12</span>
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 3</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 15</span>
+							
 							
 						</div>
 						<div class='category-tests'>
@@ -1101,143 +891,79 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2022 05:58:52 PM</td>
+										<td>May 19, 2022 12:10:18 PM</td>
 										<td class='linked' test-id='11'>Make a user Registration page without entering the values</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:58:52 PM</td>
+										<td>May 19, 2022 12:10:18 PM</td>
 										<td class='linked' test-id='12'>Make a user Registration page without entering the values</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:58:54 PM</td>
+										<td>May 19, 2022 12:10:19 PM</td>
 										<td class='linked' test-id='18'>Make a user Registration by entering just username</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:58:54 PM</td>
+										<td>May 19, 2022 12:10:19 PM</td>
 										<td class='linked' test-id='19'>Make a user Registration by entering just username</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:58:57 PM</td>
+										<td>May 19, 2022 12:10:23 PM</td>
 										<td class='linked' test-id='25'>Make a user Registration by entering just emailAddress</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:58:57 PM</td>
+										<td>May 19, 2022 12:10:23 PM</td>
 										<td class='linked' test-id='26'>Make a user Registration by entering just emailAddress</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:58:59 PM</td>
+										<td>May 19, 2022 12:10:24 PM</td>
 										<td class='linked' test-id='32'>Make a user Registration by entering valid emailAddress and valid userName and empty password</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:58:59 PM</td>
+										<td>May 19, 2022 12:10:24 PM</td>
 										<td class='linked' test-id='33'>Make a user Registration by entering valid emailAddress and valid userName and empty password</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:59:03 PM</td>
+										<td>May 19, 2022 12:10:28 PM</td>
 										<td class='linked' test-id='39'>Make a user Registration with existing username and unregistered email id</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:59:03 PM</td>
+										<td>May 19, 2022 12:10:28 PM</td>
 										<td class='linked' test-id='40'>Make a user Registration with existing username and unregistered email id</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:59:07 PM</td>
+										<td>May 19, 2022 12:10:32 PM</td>
 										<td class='linked' test-id='46'>Make a user Registration with new username and already registered email id</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:59:07 PM</td>
+										<td>May 19, 2022 12:10:32 PM</td>
 										<td class='linked' test-id='47'>Make a user Registration with new username and already registered email id</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:59:17 PM</td>
+										<td>May 19, 2022 12:10:43 PM</td>
 										<td class='linked' test-id='60'>Testing the Login Page without passing credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:59:17 PM</td>
+										<td>May 19, 2022 12:10:44 PM</td>
 										<td class='linked' test-id='66'>Testing the Login Page by passing the valid username and empty password</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2022 05:59:18 PM</td>
+										<td>May 19, 2022 12:10:46 PM</td>
 										<td class='linked' test-id='72'>Testing the Login Page by passing the valid username and invalid password</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@PositiveTest</span>
-						<span class='category-status right'>
-						<span class='label pass'>2</span>
-						<span class='label fail'>5</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 5</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 18, 2022 05:58:27 PM</td>
-										<td class='linked' test-id='2'>Testing the Shopping cart and Add to cart option</td>
 										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:58:27 PM</td>
-										<td class='linked' test-id='3'>Testing the Shopping cart and Add to cart option</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:19 PM</td>
-										<td class='linked' test-id='78'>Testing the Login Page with Valid Credentials</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:20 PM</td>
-										<td class='linked' test-id='85'>Testing the search feature</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:22 PM</td>
-										<td class='linked' test-id='91'>Testing the Filter category dropdown</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:22 PM</td>
-										<td class='linked' test-id='97'>Testing the Filter price side bar</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:24 PM</td>
-										<td class='linked' test-id='103'>Testing the Shopping cart and Add to cart option</td>
-										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1253,346 +979,7 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 18, 2022 05:59:17 PM</td>
-										<td class='linked' test-id='62'>Given I have opened the application</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='username']"}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'HOMEDELL', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4cc6aecc4f9bf9a753f48e38562952dd, findElement {using=xpath, value=//input[@id='username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\chekr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64978/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy30.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:498)
-	at com.automation.framework.cucumber.Pages.BasePage.highlight(BasePage.java:58)
-	at com.automation.framework.cucumber.Pages.LoginPage.getUserNameTextBox(LoginPage.java:55)
-	at com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application(SignInTest.java:22)
-	at ✽.I have opened the application(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SignIn.feature:4)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:17 PM</td>
-										<td class='linked' test-id='68'>Given I have opened the application</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='username']"}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'HOMEDELL', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4cc6aecc4f9bf9a753f48e38562952dd, findElement {using=xpath, value=//input[@id='username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\chekr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64978/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy30.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:498)
-	at com.automation.framework.cucumber.Pages.BasePage.highlight(BasePage.java:58)
-	at com.automation.framework.cucumber.Pages.LoginPage.getUserNameTextBox(LoginPage.java:55)
-	at com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application(SignInTest.java:22)
-	at ✽.I have opened the application(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SignIn.feature:4)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:18 PM</td>
-										<td class='linked' test-id='74'>Given I have opened the application</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='username']"}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'HOMEDELL', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4cc6aecc4f9bf9a753f48e38562952dd, findElement {using=xpath, value=//input[@id='username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\chekr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64978/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy30.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:498)
-	at com.automation.framework.cucumber.Pages.BasePage.highlight(BasePage.java:58)
-	at com.automation.framework.cucumber.Pages.LoginPage.getUserNameTextBox(LoginPage.java:55)
-	at com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application(SignInTest.java:22)
-	at ✽.I have opened the application(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SignIn.feature:4)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:19 PM</td>
-										<td class='linked' test-id='80'>Given I have opened the application</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='username']"}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'HOMEDELL', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4cc6aecc4f9bf9a753f48e38562952dd, findElement {using=xpath, value=//input[@id='username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\chekr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64978/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy30.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:498)
-	at com.automation.framework.cucumber.Pages.BasePage.highlight(BasePage.java:58)
-	at com.automation.framework.cucumber.Pages.LoginPage.getUserNameTextBox(LoginPage.java:55)
-	at com.automation.framework.cucumber.stepdefinations.SignInTest.i_have_opened_the_application(SignInTest.java:22)
-	at ✽.I have opened the application(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/SignIn.feature:4)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.ClassCastException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 18, 2022 05:59:21 PM</td>
-										<td class='linked' test-id='89'>Then Search result should return "Shoes"</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class org.openqa.selenium.WebElement (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.openqa.selenium.WebElement is in unnamed module of loader 'app')
-	at com.automation.framework.cucumber.Pages.StorePage.getAllProductNames(StorePage.java:118)
-	at com.automation.framework.cucumber.stepdefinations.StorePageTest.search_result_should_return(StorePageTest.java:75)
-	at ✽.Search result should return "Shoes"(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/Store.feature:9)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:22 PM</td>
-										<td class='linked' test-id='94'>When Browse by Categories select "Men "</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class org.openqa.selenium.WebElement (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.openqa.selenium.WebElement is in unnamed module of loader 'app')
-	at com.automation.framework.cucumber.Pages.StorePage.getAllProductNames(StorePage.java:118)
-	at com.automation.framework.cucumber.stepdefinations.StorePageTest.search_result_should_return(StorePageTest.java:75)
-	at ✽.Search result should return "Shoes"(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/Store.feature:9)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:24 PM</td>
-										<td class='linked' test-id='101'>Then results should not be greater than the max price filter</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class org.openqa.selenium.WebElement (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.openqa.selenium.WebElement is in unnamed module of loader 'app')
-	at com.automation.framework.cucumber.Pages.StorePage.getAllProductNames(StorePage.java:118)
-	at com.automation.framework.cucumber.stepdefinations.StorePageTest.search_result_should_return(StorePageTest.java:75)
-	at ✽.Search result should return "Shoes"(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/Store.feature:9)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 18, 2022 05:59:15 PM</td>
-										<td class='linked' test-id='57'>Then An Hello Message should display after successful registration in Account Dashboard page</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.automation.framework.cucumber.stepdefinations.RegistrationPageTest.an_hello_message_should_display_after_successful_registration_in_account_dashboard_page(RegistrationPageTest.java:91)
-	at ✽.An Hello Message should display after successful registration in Account Dashboard page(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/Registration.feature:82)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>May 18, 2022 05:59:28 PM</td>
-										<td class='linked' test-id='108'>Then 1 item is added to the Shopping cart</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.automation.framework.cucumber.stepdefinations.RegistrationPageTest.an_hello_message_should_display_after_successful_registration_in_account_dashboard_page(RegistrationPageTest.java:91)
-	at ✽.An Hello Message should display after successful registration in Account Dashboard page(file:///D:/Dinesh/CucumberFramwork/CucumberFramework/src/test/java/com/automation/framework/cucumber/feature/Registration.feature:82)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -1606,31 +993,31 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>16</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>50</div>
+					<div class='panel-lead'>47</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 18, 2022 05:58:23 PM</div>
+					<div class='panel-lead'>May 19, 2022 12:09:49 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 18, 2022 05:59:28 PM</div>
+			 		<div class='panel-lead'>May 19, 2022 12:11:03 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 01 04.921</div>
+					<div class='panel-lead'>00 01 14.325</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1646,30 +1033,21 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@build</td>
+							<td>@PositiveTest</td>
+							<td>7</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@NegativeTest</td>
-							<td>12</td>
-							<td>3</td>
+							<td>15</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									80%
-							</td>
-						</tr>
-						<tr>
-							<td>@PositiveTest</td>
-							<td>2</td>
-							<td>5</td>
-							<td>0</td>
-							<td>
-									28.571%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -1684,34 +1062,34 @@ Session ID: 4cc6aecc4f9bf9a753f48e38562952dd
 		<script>
 			var statusGroup = {
                 parentCount: 4,
-				passParent: 1,
-				failParent: 3,
+				passParent: 4,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 16,
-				passChild: 7,
-				failChild: 9,
+				childCount: 15,
+				passChild: 15,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 50,
-				passGrandChild: 32,
-				failGrandChild: 9,
+				grandChildCount: 47,
+				passGrandChild: 47,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 9,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Testing the Checkout Feature":24.615,"Testing the Registration Page":24.569,"Testing the Login Page":2.995,"Testing the Search and filter feature":7.936
+			        "Testing the Checkout Feature":24.292,"Testing the Registration Page":25.339,"Testing the Login Page":8.415,"Testing the Search and filter feature":10.677
 			};
 		</script>
 		

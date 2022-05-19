@@ -20,28 +20,6 @@ public class StorePageTest {
         Waits.forElementToBeDisplayed(30, STORE_PAGE.isFilterDisplayed(), "Filter tab ");
     }
 
-    @When("Browse by Categories select {string}")
-    public void browse_by_categories_select(String Category) {
-        Waits.forElementToBeDisplayed(30, STORE_PAGE.isFilterDisplayed(), "Filter tab ");
-        for (int i = 0; i < STORE_PAGE.getAllOptionsFromDropDown().size(); i++) {
-            String options = STORE_PAGE.getAllOptionsFromDropDown().get(i).getText();
-            if (options.contains(Category)) {
-                STORE_PAGE.selectOptionFromDropDown(options);
-            }
-        }
-    }
-
-    @Then("All the items displays should be of {string}")
-    public void all_the_items_displays_should_be_of_men(String category) {
-        for (WebElement categoryTags : STORE_PAGE.getAllCategoryTags()) {
-            if (STORE_PAGE.getAllCategoryTags().equals(category)) {
-                continue;
-            } else {
-                Assert.assertEquals(categoryTags.getText(), category);
-            }
-        }
-    }
-
     @When("Adjust the filter to certain price")
     public void adjust_the_filter_to_certain_price() {
         Waits.forElementToBeDisplayed(30, STORE_PAGE.isFilterDisplayed(), "Filter tab ");
@@ -63,15 +41,15 @@ public class StorePageTest {
     }
 
     @When("Search for {string}")
-    public void search_for(String product) {
+    public void search_for(String product) throws InterruptedException {
         Waits.forElementToBeDisplayed(30, STORE_PAGE.isFilterDisplayed(), "Filter tab ");
         STORE_PAGE.enterSearchElement(product);
-
+        Waits.sleep(5000);
         STORE_PAGE.clickSearchButton();
     }
 
     @Then("Search result should return {string}")
-    public void search_result_should_return(String product) {
+    public void search_result_should_return(String product) throws InterruptedException {
         for (WebElement productNameElement : STORE_PAGE.getAllProductNames()) {
             String productName = productNameElement.getText();
             if (productName.contains(product)) {

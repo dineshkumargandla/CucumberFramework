@@ -5,6 +5,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.opentelemetry.exporter.logging.SystemOutLogExporter;
 import org.testng.Assert;
 
 import static com.automation.framework.cucumber.constants.Constants.*;
@@ -84,17 +85,18 @@ public class RegistrationPageTest {
         REGISTRATION_PAGE.enterEmail(EMAIL_ID);
         REGISTRATION_PAGE.enterPassword(VALID_PASSWORD);
         REGISTRATION_PAGE.clickRegisterButton();
+        Waits.sleep(2000);
     }
     @Then("An Hello Message should display after successful registration in Account Dashboard page")
-    public void an_hello_message_should_display_after_successful_registration_in_account_dashboard_page() throws InterruptedException {
-        Waits.sleep(2000);
-        Assert.assertTrue(USER_ACCOUNT_PAGE.getUserName());
+    public void an_hello_message_should_display_after_successful_registration_in_account_dashboard_page()  {
+        Assert.assertTrue(USER_ACCOUNT_PAGE.isLogoutButtonDisplayed());
         USER_ACCOUNT_PAGE.clickLogOutButton();
     }
 
     @And("UserName Should not display")
-    public void userName_Should_not_display() {
-        Assert.assertTrue(USER_ACCOUNT_PAGE.userNameNotFound());
+    public void userName_Should_not_display() throws InterruptedException {
+        Waits.sleep(2000);
+        Assert.assertFalse(USER_ACCOUNT_PAGE.isLogoutButtonDisplayed());
     }
 
     @Then("An error message {string} Should display")

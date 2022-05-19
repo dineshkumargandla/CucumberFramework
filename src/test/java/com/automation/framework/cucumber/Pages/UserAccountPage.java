@@ -16,7 +16,7 @@ public class UserAccountPage {
     @FindBy(xpath = "//strong[1]")
     private WebElement UserNameTittle;
 
-    @FindBy(xpath = "//a[contains(text(),'Log out')]")
+    @FindBy(xpath = "//li[@class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--customer-logout']")
     private WebElement LogOutButton;
 
 
@@ -31,5 +31,9 @@ public class UserAccountPage {
 
     public void clickLogOutButton() {
         LogOutButton.click();
+    }
+
+    public boolean isLogoutButtonDisplayed() {
+       return LogOutButton.isDisplayed();
     }
 }

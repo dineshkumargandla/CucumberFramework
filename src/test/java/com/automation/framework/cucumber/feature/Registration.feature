@@ -2,6 +2,8 @@ Feature: Testing the Registration Page
 
   Background:
     Given I click the Account tab Registration Page should display
+
+
   @NegativeTest
   Scenario Outline: Make a user Registration page without entering the values
     When Click Register button without entering any value
@@ -26,13 +28,13 @@ Feature: Testing the Registration Page
       | actualErrorMessage                              |
       | "Error: Please enter a valid account username." |
 
-#  @NegativeTest1
+#  @NegativeTest
 #  Scenario: Make a user Registration by entering invalid emailAddress
 #    When I click the Account tab Registration Page should display
 #    Then Click Register button after entering a sample invalid emailAddress
 #    And UserName Should not display
 #
-#  @NegativeTest1
+#  @NegativeTest
 #  Scenario: Make a user Registration by entering invalid emailAddress by excluding .com
 #    When I click the Account tab Registration Page should display
 #    Then Click Register button after entering a sample invalid emailAddress by adding @ and excluding .com
@@ -76,7 +78,8 @@ Feature: Testing the Registration Page
       | actualErrorMessage                                                                |
       | "Error: An account is already registered with your email address. Please log in." |
 
-  @build
-  Scenario: Make a user Registration with new username and new registered email id
-    When Click Register button after entering a new email id and new username
-    Then An Hello Message should display after successful registration in Account Dashboard page
+    @PositiveTest
+    Scenario: Make a user Registration with new username and new registered email id
+      When Click Register button after entering a new email id and new username
+      Then An Hello Message should display after successful registration in Account Dashboard page
+

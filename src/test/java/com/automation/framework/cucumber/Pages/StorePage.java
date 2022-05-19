@@ -49,14 +49,14 @@ public class StorePage {
 
     public List<WebElement> getAllOptionsFromDropDown() {
         Select se = new Select(driver.findElement(By.xpath("//select[@id='product_cat']")));
-        BASE_PAGE.highlight(driver, (WebElement) se);
+//        BASE_PAGE.highlight(driver, (WebElement) se);
         return se.getOptions();
     }
 
-    public void selectOptionFromDropDown (String category) {
+    public void selectOptionFromDropDown (String category) throws InterruptedException {
         Select se = new Select(driver.findElement(By.xpath("//select[@id='product_cat']")));
-        BASE_PAGE.highlight(driver, (WebElement) se);
         se.selectByVisibleText(category);
+        Waits.sleep(5000);
     }
 
     public void  clickAddToCartButton() {
@@ -69,14 +69,13 @@ public class StorePage {
          FilterButton.click();
     }
 
-    public List<WebElement> getAllCategoryTags(){
+    public List<WebElement> getAllCategoryTags() throws InterruptedException {
+        Waits.sleep(5000);
         List<WebElement> element = driver.findElements(By.xpath("//span[@class='ast-woo-product-category']"));
-        BASE_PAGE.highlight(driver, (WebElement) element);
         return element;
     }
 
     public WebElement isFilterDisplayed() {
-        BASE_PAGE.highlight(driver, FilterMaxValue);
         return FilterMaxValue;
     }
 
@@ -99,7 +98,7 @@ public class StorePage {
 
     public List<WebElement> getAllProductPrice(){
         List<WebElement> element = driver.findElements(By.xpath("//ul[@class='products columns-4']//span[@class='woocommerce-Price-amount amount']"));
-        BASE_PAGE.highlight(driver, (WebElement) element);
+//        BASE_PAGE.highlight(driver, (WebElement) element);
         return element;
     }
 
@@ -115,7 +114,7 @@ public class StorePage {
 
     public List<WebElement> getAllProductNames(){
         List<WebElement> element = driver.findElements(By.xpath("//h2[@class='woocommerce-loop-product__title']"));
-        BASE_PAGE.highlight(driver, (WebElement) element);
+       // BASE_PAGE.highlight(driver, (WebElement) element);
         return element;
     }
 
