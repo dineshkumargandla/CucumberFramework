@@ -1,17 +1,19 @@
 package com.automation.framework.cucumber.constants;
 
 import com.automation.framework.cucumber.utils.CredentialsPropertyReader;
-import org.testng.Assert;
 
 public interface CredentialsConstants {
-     static String USER_NAME = CredentialsPropertyReader.getUserName();
-     static String EMAIL_ID = CredentialsPropertyReader.getEmailId();
 
-     static String VALID_PASSWORD = "MyPassword";
+    public String USER_NAME = CredentialsPropertyReader.getUserName();
 
-     static String INVALID_PASSWORD = "InValid_MyPassword";
-     static String REGISTERED_USER_NAME = "REGISTEREDUSERNAME";
+    public String EMAIL_ID = CredentialsPropertyReader.getEmailId();
 
-     static String REGISTERED_EMAIL_ADDRESS = "REGISTEREDUSERNAME@test.com";
+    public  String VALID_PASSWORD = "MyPassword";
+
+    public String INVALID_PASSWORD = "InValid_MyPassword";
+    public  String REGISTERED_USER_NAME = "REGISTEREDUSERNAME";
+
+    public String REGISTERED_EMAIL_ADDRESS = "REGISTEREDUSERNAME@test.com";
+
 
 }

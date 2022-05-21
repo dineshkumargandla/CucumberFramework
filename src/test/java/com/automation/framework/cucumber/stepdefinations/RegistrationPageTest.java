@@ -5,7 +5,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.opentelemetry.exporter.logging.SystemOutLogExporter;
 import org.testng.Assert;
 
 import static com.automation.framework.cucumber.constants.Constants.*;

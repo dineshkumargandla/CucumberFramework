@@ -3,6 +3,7 @@ Feature: Testing the Login Page
   Background: Opening application
     Given I have opened the application
 
+
   @NegativeTest
   Scenario: Testing the Login Page without passing credentials
     When Click Login without passing username and password
