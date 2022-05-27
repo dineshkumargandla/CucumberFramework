@@ -154,3 +154,4 @@ CucumberFramework.iml
 *.iml
 target/test-classes/extent.properties
 src/test/resources/credentials.properties
+src/test/resources/credentials.properties
